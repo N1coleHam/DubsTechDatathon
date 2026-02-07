@@ -129,7 +129,7 @@ body {
 
 .logo-year {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   color: var(--color-text-secondary);
 }
 
@@ -1246,7 +1246,7 @@ body {
 }
 
 .team-names {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-text);
   margin-bottom: var(--spacing-xs);

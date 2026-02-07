@@ -160,9 +160,9 @@ const Conclusion = () => {
           </div>
 
           <div className="team-info">
-            <p className="team-label">Project Team</p>
-            <p className="team-names">Sarah Chen • Marcus Rodriguez • Aisha Patel • James Kim</p>
-            <p className="team-date">Datathon 2026 • February 2026</p>
+            <p className="team-label">The Nth</p>
+            <p className="team-names">Nicole Ham • Tiffany Guan • Hanna Pan</p>
+            <p className="team-date">DubsTech Datathon 2026 • February 2026</p>
           </div>
         </div>
       </div>

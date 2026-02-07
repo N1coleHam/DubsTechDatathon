@@ -15,7 +15,7 @@ const Navbar = ({ sections, currentSection, onNavigate }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <span className="logo-text">Datathon</span>
+          <span className="logo-text">DubsTech Datathon</span>
           <span className="logo-year">2026</span>
         </div>
         
