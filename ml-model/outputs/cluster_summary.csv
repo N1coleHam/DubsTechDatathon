@@ -1,0 +1,5 @@
+cluster,n_websites,domains,avg_total_violations,avg_score
+0,129,"e-commerce, educational platforms, government and public services, health and wellness, news and media, streaming platforms, technology science and research",97.45736434108527,3.6079864364748087
+1,439,"e-commerce, educational platforms, government and public services, health and wellness, news and media, streaming platforms, technology science and research, technologyscienceresearch",19.904328018223236,3.518498933362259
+2,22,"educational platforms, health and wellness, news and media, technology science and research",190.0909090909091,3.597838473172698
+3,1,educational platforms,537.0,3.739130434782609
