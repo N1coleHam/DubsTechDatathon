@@ -141,7 +141,7 @@ const Conclusion = () => {
         </div>
 
         <div className="conclusion-footer">
-          <div className="impact-statement">
+          {/* <div className="impact-statement">
             <h3>Expected Impact</h3>
             <div className="impact-metrics">
               <div className="impact-metric">
@@ -157,7 +157,7 @@ const Conclusion = () => {
                 <div className="impact-label">Increase in CLV</div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="team-info">
             <p className="team-label">The Nth</p>

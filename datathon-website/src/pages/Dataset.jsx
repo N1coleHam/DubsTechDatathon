@@ -25,7 +25,7 @@ const Dataset = () => {
           </div>
           
           <div className="stat-box">
-            <div className="stat-icon">🔢</div>
+            <div className="stat-icon">🔍</div>
             <div className="stat-description">Features</div>
             <div className="stat-value">12</div>
             {/* <div className="stat-description">Features</div> */}

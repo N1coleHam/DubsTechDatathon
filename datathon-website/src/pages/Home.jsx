@@ -21,7 +21,7 @@ const Home = () => {
         </p>
 
         <p className="home-description">
-          By combining data visualization with machine learning, we examine <em>where technology fails</em>, <em>who is most affected</em>, and <em>how structural design choices contribute to inequity</em>.
+          By combining data visualization with unsupervised machine learning, we examine <em>where technology fails</em>, <em>who is most affected</em>, and <em>how structural design choices contribute to inequity</em>.
         </p>
         
         <div className="home-team">
@@ -41,14 +41,32 @@ const Home = () => {
         </button>
       </div>
       
-      <div className="home-visual">
+      {/* <div className="home-visual">
         <div className="visual-grid">
           <div className="grid-item"></div>
           <div className="grid-item"></div>
           <div className="grid-item"></div>
           <div className="grid-item"></div>
         </div>
+      </div> */}
+      <div className="home-visual">
+        <div className="cube-container">
+          <div className="cube-halo"></div>
+
+          <div className="cube-scene">
+            <div className="cube">
+              <div className="cube-face front" />
+              <div className="cube-face back" />
+              <div className="cube-face right" />
+              <div className="cube-face left" />
+              <div className="cube-face top" />
+              <div className="cube-face bottom" />
+            </div>
+          </div>
+        </div>
       </div>
+
+
     </div>
   );
 };
