@@ -4,8 +4,7 @@ import Section from '../components/Section';
 const Analysis = () => {
   return (
     <Section 
-      title="Analysis" 
-      subtitle="Key insights from exploratory data analysis"
+      title="Data Analysis"
     >
       <div className="analysis-content">
         <div className="analysis-intro">

@@ -413,29 +413,6 @@ body {
   animation: rotateCube 20s linear infinite;
 }
 
-/* .cube-face {
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  background: linear-gradient(
-    135deg,
-    #111827,
-    #1f2937
-  );
-  border: 2px solid rgba(96, 165, 250, 0.6);
-  box-shadow:
-    inset 0 0 30px rgba(96, 165, 250, 0.15),
-    0 0 20px rgba(96, 165, 250, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-text);
-  letter-spacing: 0.02em;
-} */
  .cube-face {
   position: absolute;
   width: 320px;
@@ -959,7 +936,28 @@ body {
   gap: var(--spacing-xl);
 }
 
-.model-comparison h3,
+.model-overview p {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.model-config h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+}
+
+.model-metrics h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+}
+
+
+/* .model-comparison h3,
 .model-metrics h3,
 .model-config h3,
 .feature-importance h3 {
@@ -967,9 +965,9 @@ body {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: var(--spacing-lg);
-}
+} */
 
-.comparison-table {
+/* .comparison-table {
   background: var(--color-surface);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-lg);
@@ -1027,7 +1025,7 @@ body {
 .winner-badge {
   background: var(--color-accent-blue);
   color: white;
-}
+} */
 
 .metric {
   font-family: var(--font-mono);
@@ -1159,24 +1157,46 @@ body {
   gap: var(--spacing-xl);
 }
 
-.chart-container {
+.dashboard-explanation {
+  margin-top: var(--spacing-l);
+  padding: var(--spacing-lg);
   background: var(--color-surface);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
 }
 
-.chart-title {
+.dashboard-explanation h3 {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
-.chart-description {
-  font-size: 0.95rem;
+.dashboard-explanation p {
   color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboard-explanation ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboard-explanation li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.dashboard-explanation li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
 }
 
 /* Embed Component */

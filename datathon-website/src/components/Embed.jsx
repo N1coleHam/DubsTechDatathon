@@ -7,17 +7,24 @@ const Embed = ({
   height = '500px',
   children 
 }) => {
-  if (type === 'tableau') {
+  if (type === "tableau") {
     return (
       <div className="embed-container">
         <h3 className="embed-title">{title}</h3>
         <div className="tableau-container" style={{ height }}>
-          {/* Replace this with your Tableau embed code */}
-          <div className="tableauPlaceholder" dangerouslySetInnerHTML={{ __html: src }} />
+          <iframe
+            title={title}
+            src={src}
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            allowFullScreen
+          />
         </div>
       </div>
     );
   }
+
 
   if (type === 'plotly') {
     return (
