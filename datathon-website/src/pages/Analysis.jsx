@@ -7,14 +7,8 @@ const Analysis = () => {
       title="Data Analysis"
     >
       <div className="analysis-content">
-        <div className="analysis-intro">
-          <p className="lead-text">
-            Our exploratory analysis revealed several patterns that strongly correlate with 
-            customer churn, providing valuable insights for both model building and business strategy.
-          </p>
-        </div>
 
-        <div className="findings-grid">
+        {/* <div className="findings-grid">
           <div className="finding-card accent-blue">
             <div className="finding-header">
               <span className="finding-icon">📊</span>
@@ -98,30 +92,32 @@ const Analysis = () => {
               <strong>Insight:</strong> Service quality issues may drive fiber churn
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="analysis-summary">
-          <h3>Summary of Insights</h3>
+          <h3>What violation types are most common across sites or domains?</h3>
           <div className="summary-points">
             <div className="summary-point">
-              <div className="point-marker"></div>
               <p>
-                Contract flexibility and customer tenure are the strongest predictors of churn, 
-                suggesting early engagement and commitment are crucial
+                Across all analyzed website domains, syntactic accessibility violations are by far the most common. The distribution of violation types shows that syntax related issues significantly outnumber both semantic and layout violations. This indicates that many accessibility failures stem from low-level implementation problems, such as missing HTML attributes, improper ARIA usage, or invalid markup, rather than from visual design choices or content meaning. The dominance of syntactic violations suggests that foundational accessibility standards are not being consistently met across websites, regardless of domain category.
               </p>
             </div>
+          </div>
+
+          <h3>Are there patterns in violations by violation category (syntactic, semantic, layout)?</h3>
+          <div className="summary-points">
             <div className="summary-point">
-              <div className="point-marker"></div>
               <p>
-                Payment friction and service complexity create churn risk, pointing to opportunities 
-                in payment automation and service bundling
+                Clear patterns also emerge when examining violations by category. Syntactic violations form the largest share followed by semantic violations with layout violations occurring least frequently. Semantic issues such as unclear heading structures or missing contextual cues appear regularly but at much lower volumes while layout violations are comparatively rare. This pattern implies that while higher level accessibility concerns exist the most widespread barriers are rooted in technical implementation rather than user facing design. It also reflects the strengths and limitations of automated accessibility testing which tends to detect syntactic errors more reliably than semantic or layout related problems.
               </p>
             </div>
+          </div>
+
+          <h3>Examine invisible barriers: e.g., are certain violations more common on government sites than on e-commerce sites?</h3>
+          <div className="summary-points">
             <div className="summary-point">
-              <div className="point-marker"></div>
               <p>
-                Price sensitivity varies by customer segment, indicating potential for targeted 
-                retention offers based on service usage patterns
+                When comparing domains differences in both volume and severity reveal important invisible barriers. News and media websites show the highest total number of accessibility violations followed by educational platforms and technology related sites. Government and public sector websites while not having the highest overall counts display a concerning concentration of moderate and serious violations. These issues often affect assistive technology users in ways that are not immediately visible such as broken navigation for screen readers or inaccessible form structures. In contrast e-commerce sites tend to exhibit more minor violations likely because commercial incentives encourage faster remediation of issues that affect key user flows like purchasing. This contrast highlights that government websites despite serving critical public functions may pose deeper accessibility risks when violations occur as users often have no alternative means of accessing these services. 
               </p>
             </div>
           </div>

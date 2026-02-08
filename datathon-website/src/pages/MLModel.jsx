@@ -188,6 +188,18 @@ const MLModel = () => {
           </div>
         </div>
 
+        {/* Interesting Findings */}
+        <div className="analysis-summary">
+          <h3>Interesting Findings</h3>
+          <div className="summary-points">
+            <div className="summary-point">
+              <p>
+                Clustering analysis grouped websites into four accessibility-risk levels based on violation patterns and severity. Most websites fell into the low-risk cluster, while smaller groups of websites exhibited medium- and high-risk accessibility profiles. Domain distribution analysis showed that news and media websites appeared more frequently in the medium- and high-risk clusters compared to other domains. This suggests that accessibility challenges may be more common in domains with dynamic layouts, multimedia content, and complex page structures. The model also identified a single extreme-risk outlier website with substantially higher violation counts than others. News and media websites appear most frequently in both the medium-risk and high-risk accessibility clusters compared to other domains. Technology science and research websites also appear in higher-risk clusters, though less frequently than news sites. In contrast, educational platforms and government websites are more concentrated in the low-risk cluster, suggesting comparatively better accessibility compliance across most sites in those domains.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </Section>
   );
